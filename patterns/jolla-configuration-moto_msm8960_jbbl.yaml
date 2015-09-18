@@ -1,0 +1,14 @@
+# Feel free to disable non-critical HA parts during devel by commenting lines out
+# Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
+
+Description: Pattern with packages for moto_msm8960_jbbl configurations
+Name: jolla-configuration-moto_msm8960_jbbl
+Requires:
+- pattern:jolla-hw-adaptation-moto_msm8960_jbbl
+- pattern:jolla-sailfish-applications
+- pattern:jolla-ui-wayland
+# Early stages of porting benefit from these:
+- pattern:sailfish-porter-tools
+
+Summary: Jolla Configuration moto_msm8960_jbbl
+
