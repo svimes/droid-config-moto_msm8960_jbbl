@@ -1,0 +1,1 @@
+CONFIG="-n --file=/etc/pulse/arm_moto_msm8960_jbbl_flattened_device_tree_000b.pa"
