@@ -16,8 +16,12 @@ Requires:
 - droid-config-moto_msm8960_jbbl-policy-settings
 - droid-config-moto_msm8960_jbbl-preinit-plugin
 - droid-hal-version-moto_msm8960_jbbl
+- droid-hal-moto_msm8960_jbbl-detritus
+- geoclue-provider-hybris-community
 
 - pulseaudio-modules-droid
+# for audio recording to work:
+- qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
 # These need to be per-device due to differing backends (fbdev, eglfs, hwc, ..?)
 - qt5-qtwayland-wayland_egl
@@ -36,7 +40,6 @@ Requires:
 - gstreamer1.0-plugins-base
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
-
 - gstreamer1.0-droid
 
 # This is needed for notification LEDs
@@ -67,6 +70,10 @@ Requires:
 
 # Settings app needs this since update15
 - jolla-settings-layout
+
+# For devices with working cellular modem:
+- pattern:jolla-sailfish-cellular-apps
+- telepathy-ring
 
 Summary: Jolla HW Adaptation moto_msm8960_jbbl
 
